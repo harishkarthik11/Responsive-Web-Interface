@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build the Future - Web Application</title>
+    <meta name="description" content="A responsive web application interface.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+                <span class="sr-only">Menu</span>
+                <div class="hamburger"></div>
+            </button>
+            <div class="logo">AppLogo</div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#explore">Explore</a></li>
+                    <li><a href="#saved">Saved</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn" aria-label="Search">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <main class="main-content">
+            <article id="home" class="hero-section">
+                <div class="hero-text">
+                    <h1>Build the Future</h1>
+                    <p>A strategic execution framework for the next generation of digital craftsmanship.</p>
+                    <button class="btn-primary">Learn More</button>
+                </div>
+                <div class="hero-image">
+                    <!-- Placeholder for image -->
+                    <div class="image-placeholder hero-img-bg"></div>
+                </div>
+            </article>
+
+            <article id="explore" class="projects-section">
+                <div class="section-header">
+                    <h2>Content Grid</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="grid-container">
+                    <div class="card">
+                        <div class="card-image card-img-1"></div>
+                        <div class="card-content">
+                            <h3>Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="card-actions">
+                                <a href="#" class="card-link">Read More</a>
+                                <button class="icon-btn-small" aria-label="Save">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image card-img-2"></div>
+                        <div class="card-content">
+                            <h3>Dolor Sit Amet</h3>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="card-actions">
+                                <a href="#" class="card-link">Read More</a>
+                                <button class="icon-btn-small" aria-label="Save">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image card-img-3"></div>
+                        <div class="card-content">
+                            <h3>Consectetur</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <div class="card-actions">
+                                <a href="#" class="card-link">Read More</a>
+                                <button class="icon-btn-small" aria-label="Save">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-image card-img-4"></div>
+                        <div class="card-content">
+                            <h3>Adipiscing Elit</h3>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                            <div class="card-actions">
+                                <a href="#" class="card-link">Read More</a>
+                                <button class="icon-btn-small" aria-label="Save">🔖</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget profile-widget">
+                <div class="avatar"></div>
+                <div class="profile-info">
+                    <h3>Welcome Back</h3>
+                    <p>Continue exploring the digital craft.</p>
+                </div>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Quick Links</h3>
+                <ul class="widget-list">
+                    <li><a href="#">My Dashboard</a></li>
+                    <li><a href="#">Recent Activity</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#home" class="bottom-nav-item active">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="#explore" class="bottom-nav-item">
+            <span class="icon">🗂️</span>
+            <span class="label">Grid</span>
+        </a>
+        <a href="#search" class="bottom-nav-item">
+            <span class="icon">🔍</span>
+            <span class="label">Search</span>
+        </a>
+        <a href="#settings" class="bottom-nav-item">
+            <span class="icon">⚙️</span>
+            <span class="label">Settings</span>
+        </a>
+    </nav>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Digital Craftsmanship App. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
